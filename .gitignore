@@ -1,2 +1,5 @@
 PDK_DIR
 docs
+*.log
+*.svf
+alib-52

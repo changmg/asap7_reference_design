@@ -1,5 +1,5 @@
 # Expand the list of .v files from the ../hdl directory
-set verilog_files [glob $HDL_DIR/*.v]
+set verilog_files [glob $RTL_DIR/*.v]
 puts "Verilog files: $verilog_files"
 
 # Read design file
