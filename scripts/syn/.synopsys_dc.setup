@@ -1,0 +1,32 @@
+set LIB_PATH     "../std_cells"
+set search_path "$search_path $LIB_PATH"
+set synthetic_library "dw_foundation.sldb"
+
+set target_library [list \
+    "$LIB_PATH/asap7sc7p5t_AO_RVT_TT_ccs_211120.db" \
+    "$LIB_PATH/asap7sc7p5t_INVBUF_RVT_TT_ccs_211120.db" \
+    "$LIB_PATH/asap7sc7p5t_OA_RVT_TT_ccs_211120.db" \
+    "$LIB_PATH/asap7sc7p5t_SEQ_RVT_TT_ccs_220123.db" \
+    "$LIB_PATH/asap7sc7p5t_SIMPLE_RVT_TT_ccs_211120.db" \
+]
+
+set link_library "* $synthetic_library $target_library"
+
+set symbol_library "generic.sdb"
+set synthetic_library "dw_foundation.sldb"
+
+#Environment Settings
+set command_log_file "./command.log"
+set view_command_log_file "./view_command.log"
+
+set hdlin_translate_off_skip_text "TRUE"
+set verilogout_no_tri true
+
+set hdlin_ff_always_sync_set_reset "TRUE"
+
+set sh_enable_line_editing true
+set sh_line_editing_mode emacs
+history keep 100
+alias h history
+
+echo "\n\nI am ready...\n"

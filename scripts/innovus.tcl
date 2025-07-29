@@ -3,20 +3,20 @@
 #set VERSION 17
 #set VERSION 18
 #set VERSION 19
-#set VERSION 20
-set VERSION 21
+set VERSION 20
+#set VERSION 21
 
 set init_design_uniquify 1
 
-set init_verilog {../run/netlist.v}
+set init_verilog {./run/netlist.v}
 
 set init_design_netlisttype {Verilog}
 set init_design_settop {1}
 set init_top_cell {sha256}
 
-set DB_PATH "../db/"					
-set LEF_PATH "../lef/scaled/"
-set TLEF_PATH "../techlef/"
+set DB_PATH "./db/"					
+set LEF_PATH "./lef/scaled/"
+set TLEF_PATH "./techlef/"
 
 set CELL_LEF "$LEF_PATH/asap7sc7p5t_28_L_4x_220121a.lef $LEF_PATH/asap7sc7p5t_28_SL_4x_220121a.lef $LEF_PATH/asap7sc7p5t_28_R_4x_220121a.lef"
 set TECH_LEF $TLEF_PATH/asap7_tech_4x_201209.lef
@@ -33,7 +33,7 @@ set init_gnd_net {VSS}
 
 # here starts the timing libraries
 set init_cpf_file {}
-set init_mmmc_file {../scripts/sha256.mmmc}
+set init_mmmc_file {./scripts/sha256.mmmc}
 
 init_design 
 
@@ -250,16 +250,16 @@ saveNetlist ${DB_PATH}${init_top_cell}_v${VERSION}.v
 # setStreamOutMode -reset
 
 # streamOut ./sha256_v${VERSION}.gds.gz \
-    # -mapFile {../gds/gds2.map} \
+    # -mapFile {./gds/gds2.map} \
     # -libName DesignLib \
     # -uniquifyCellNames \
     # -outputMacros \
     # -stripes 1 \
     # -mode ALL \
     # -units 4000 \
-    # -reportFile ../report/top/gds_stream_out_final.rpt \
-    # -merge { ../gds/asap7sc7p5t_28_L_220121a_scaled4x.gds  ../gds/asap7sc7p5t_28_SL_220121a_scaled4x.gds }
-    ## -merge { ../gds/asap7sc7p5t_28_L_220121a_scaled4x.gds  ../gds/asap7sc7p5t_28_R_220121a_scaled4x.gds  ../gds/asap7sc7p5t_28_SL_220121a_scaled4x.gds  ../gds/asap7sc7p5t_28_SRAM_220121a_scaled4x.gds}
+    # -reportFile ./report/top/gds_stream_out_final.rpt \
+    # -merge { ./gds/asap7sc7p5t_28_L_220121a_scaled4x.gds  ./gds/asap7sc7p5t_28_SL_220121a_scaled4x.gds }
+    ## -merge { ./gds/asap7sc7p5t_28_L_220121a_scaled4x.gds  ./gds/asap7sc7p5t_28_R_220121a_scaled4x.gds  ./gds/asap7sc7p5t_28_SL_220121a_scaled4x.gds  ./gds/asap7sc7p5t_28_SRAM_220121a_scaled4x.gds}
 
 
 
