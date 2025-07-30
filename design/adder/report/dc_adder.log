@@ -1,0 +1,188 @@
+************************************
+Report : units
+Design : adder
+Version: O-2018.06-SP1
+Date   : Wed Jul 30 05:34:57 2025
+
+************************************
+Units
+------------------------------------
+Time_unit            : 1.0e-12 Second(ps)
+Capacitive_load_unit : 1.0e-15 Farad(fF)
+Resistance_unit      : 1000 Ohm(kOhm)
+Voltage_unit         : 1 Volt
+Power_unit           : N/A
+Current_unit         : 1.0e-03 Amp(mA)
+1
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : adder
+Version: O-2018.06-SP1
+Date   : Wed Jul 30 05:34:57 2025
+****************************************
+
+Operating Conditions: PVT_0P7V_25C   Library: asap7sc7p5t_AO_LVT_TT_nldm_211120
+Wire Load Model Mode: enclosed
+
+  Startpoint: a_0_ (input port)
+  Endpoint: f_127_ (output port)
+  Path Group: default
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                   0.0000     0.0000 r
+  a_0_ (in)                              0.0000     0.0000 r
+  U936/Y (NAND2xp33_ASAP7_75t_L)        16.4391    16.4391 f
+  U937/Y (NAND2xp33_ASAP7_75t_L)        16.1015    32.5406 r
+  U938/Y (OAI21xp33_ASAP7_75t_L)        26.0054    58.5460 f
+  U940/Y (OAI21xp33_ASAP7_75t_L)        25.0677    83.6137 r
+  U952/Y (A2O1A1Ixp33_ASAP7_75t_L)      18.2154   101.8291 f
+  U958/Y (AOI31xp33_ASAP7_75t_L)        18.7833   120.6123 r
+  U963/Y (OAI21xp33_ASAP7_75t_L)        21.6041   142.2165 f
+  U969/Y (AOI31xp33_ASAP7_75t_L)        22.5943   164.8107 r
+  U983/Y (OAI31xp33_ASAP7_75t_L)        20.2447   185.0554 f
+  U989/Y (AOI31xp33_ASAP7_75t_L)        22.8255   207.8809 r
+  U1002/Y (OAI31xp33_ASAP7_75t_L)       20.2670   228.1479 f
+  U1008/Y (AOI31xp33_ASAP7_75t_L)       22.8255   250.9735 r
+  U1021/Y (OAI31xp33_ASAP7_75t_L)       20.2670   271.2404 f
+  U1027/Y (AOI31xp33_ASAP7_75t_L)       22.8255   294.0660 r
+  U1040/Y (OAI31xp33_ASAP7_75t_L)       20.2670   314.3329 f
+  U1046/Y (AOI31xp33_ASAP7_75t_L)       22.8256   337.1585 r
+  U1059/Y (OAI31xp33_ASAP7_75t_L)       20.2670   357.4255 f
+  U1065/Y (AOI31xp33_ASAP7_75t_L)       22.8256   380.2510 r
+  U1078/Y (OAI31xp33_ASAP7_75t_L)       20.2670   400.5180 f
+  U1084/Y (AOI31xp33_ASAP7_75t_L)       20.8431   421.3611 r
+  U1096/Y (A2O1A1Ixp33_ASAP7_75t_L)     20.9844   442.3455 f
+  U1106/Y (O2A1O1Ixp33_ASAP7_75t_L)     21.1150   463.4604 r
+  U1118/Y (A2O1A1Ixp33_ASAP7_75t_L)     21.1230   484.5835 f
+  U1128/Y (O2A1O1Ixp33_ASAP7_75t_L)     21.1403   505.7238 r
+  U1140/Y (A2O1A1Ixp33_ASAP7_75t_L)     21.1276   526.8514 f
+  U1150/Y (O2A1O1Ixp33_ASAP7_75t_L)     21.1412   547.9926 r
+  U1162/Y (A2O1A1Ixp33_ASAP7_75t_L)     21.1278   569.1204 f
+  U1172/Y (O2A1O1Ixp33_ASAP7_75t_L)     21.1412   590.2616 r
+  U1184/Y (A2O1A1Ixp33_ASAP7_75t_L)     21.1278   611.3894 f
+  U1194/Y (O2A1O1Ixp33_ASAP7_75t_L)     21.1412   632.5306 r
+  U1206/Y (A2O1A1Ixp33_ASAP7_75t_L)     21.1278   653.6584 f
+  U1216/Y (O2A1O1Ixp33_ASAP7_75t_L)     26.7072   680.3655 r
+  U1228/Y (A2O1A1Ixp33_ASAP7_75t_L)     19.9698   700.3353 f
+  U1237/Y (A2O1A1Ixp33_ASAP7_75t_L)     14.4326   714.7679 r
+  U782/Y (OAI21xp33_ASAP7_75t_L)        26.1857   740.9536 f
+  U1240/Y (OAI211xp5_ASAP7_75t_L)       20.9390   761.8926 r
+  U762/Y (OAI21xp33_ASAP7_75t_L)        26.6223   788.5148 f
+  U1241/Y (NOR2xp33_ASAP7_75t_L)        16.5988   805.1136 r
+  U1242/Y (AOI211xp5_ASAP7_75t_L)       14.4583   819.5719 f
+  U1246/Y (NOR2xp33_ASAP7_75t_L)        27.5419   847.1138 r
+  U781/Y (OAI22xp33_ASAP7_75t_L)        27.1996   874.3135 f
+  U1250/SN (FAx1_ASAP7_75t_L)           65.6223   939.9357 f
+  f_127_ (out)                           0.0000   939.9357 f
+  data arrival time                               939.9357
+
+  max_delay                            1000.0000  1000.0000
+  output external delay                  0.0000   1000.0000
+  data required time                              1000.0000
+  -----------------------------------------------------------
+  data required time                              1000.0000
+  data arrival time                               -939.9357
+  -----------------------------------------------------------
+  slack (MET)                                      60.0643
+
+
+1
+ 
+****************************************
+Report : area
+Design : adder
+Version: O-2018.06-SP1
+Date   : Wed Jul 30 05:34:57 2025
+****************************************
+
+Library(s) Used:
+
+    asap7sc7p5t_SIMPLE_LVT_TT_nldm_211120 (File: /mnt/lib/asap7sc7p5t_SIMPLE_LVT_TT_nldm_211120.db)
+    asap7sc7p5t_AO_LVT_TT_nldm_211120 (File: /mnt/lib/asap7sc7p5t_AO_LVT_TT_nldm_211120.db)
+    asap7sc7p5t_INVBUF_LVT_TT_nldm_211120 (File: /mnt/lib/asap7sc7p5t_INVBUF_LVT_TT_nldm_220122.db)
+    asap7sc7p5t_OA_LVT_TT_nldm_211120 (File: /mnt/lib/asap7sc7p5t_OA_LVT_TT_nldm_211120.db)
+
+Number of ports:                          385
+Number of nets:                          1087
+Number of cells:                          831
+Number of combinational cells:            831
+Number of sequential cells:                 0
+Number of macros/black boxes:               0
+Number of buf/inv:                        192
+Number of references:                      20
+
+Combinational area:                 72.812520
+Buf/Inv area:                        8.398080
+Noncombinational area:               0.000000
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:                    72.812520
+Total area:                 undefined
+1
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: There is no defined clock in the design. (PWR-80)
+Warning: Design has unannotated primary inputs. (PWR-414)
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : adder
+Version: O-2018.06-SP1
+Date   : Wed Jul 30 05:34:57 2025
+****************************************
+
+
+Library(s) Used:
+
+    asap7sc7p5t_SIMPLE_LVT_TT_nldm_211120 (File: /mnt/lib/asap7sc7p5t_SIMPLE_LVT_TT_nldm_211120.db)
+    asap7sc7p5t_AO_LVT_TT_nldm_211120 (File: /mnt/lib/asap7sc7p5t_AO_LVT_TT_nldm_211120.db)
+    asap7sc7p5t_INVBUF_LVT_TT_nldm_211120 (File: /mnt/lib/asap7sc7p5t_INVBUF_LVT_TT_nldm_220122.db)
+    asap7sc7p5t_OA_LVT_TT_nldm_211120 (File: /mnt/lib/asap7sc7p5t_OA_LVT_TT_nldm_211120.db)
+
+
+Operating Conditions: PVT_0P7V_25C   Library: asap7sc7p5t_AO_LVT_TT_nldm_211120
+Wire Load Model Mode: enclosed
+
+Design        Wire Load Model            Library
+------------------------------------------------
+
+
+Global Operating Voltage = 0.7  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ps
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+  Cell Internal Power  =  35.0503 mW   (40%)
+  Net Switching Power  =  52.6861 mW   (60%)
+                         ---------
+Total Dynamic Power    =  87.7364 mW  (100%)
+
+Cell Leakage Power     = 629.9131 nW
+
+Information: report_power power group summary does not include estimated clock tree power. (PWR-789)
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)
+register           0.0000            0.0000            0.0000            0.0000  (   0.00%)
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
+combinational     35.0503           52.6861        6.2991e+05           87.7370  ( 100.00%)
+--------------------------------------------------------------------------------------------------
+Total             35.0503 mW        52.6861 mW     6.2991e+05 pW        87.7370 mW
+1

@@ -1,0 +1,396 @@
+************************************
+Report : units
+Design : top
+Version: O-2018.06-SP1
+Date   : Wed Jul 30 23:44:09 2025
+
+************************************
+Units
+------------------------------------
+Time_unit            : 1.0e-12 Second(ps)
+Capacitive_load_unit : 1.0e-15 Farad(fF)
+Resistance_unit      : 1000 Ohm(kOhm)
+Voltage_unit         : 1 Volt
+Power_unit           : N/A
+Current_unit         : 1.0e-03 Amp(mA)
+1
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : top
+Version: O-2018.06-SP1
+Date   : Wed Jul 30 23:44:09 2025
+****************************************
+
+Operating Conditions: PVT_0P7V_25C   Library: asap7sc7p5t_AO_LVT_TT_nldm_211120
+Wire Load Model Mode: enclosed
+
+  Startpoint: a_14_ (input port)
+  Endpoint: f_127_ (output port)
+  Path Group: default
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                   0.0000     0.0000 f
+  a_14_ (in)                             0.0000     0.0000 f
+  U16381/Y (INVx1_ASAP7_75t_L)         127.2240   127.2240 r
+  U19710/Y (HB1xp67_ASAP7_75t_L)       140.8743   268.0983 r
+  U19712/Y (OAI22xp33_ASAP7_75t_L)      36.4240   304.5224 f
+  U19724/Y (NOR2xp33_ASAP7_75t_L)      153.0621   457.5845 r
+  U19852/Y (INVxp33_ASAP7_75t_L)       105.7673   563.3517 f
+  U16386/Y (INVxp67_ASAP7_75t_L)       132.5820   695.9338 r
+  U19965/Y (AOI222xp33_ASAP7_75t_L)     47.0289   742.9627 f
+  U19966/Y (NAND3xp33_ASAP7_75t_L)      27.8602   770.8229 r
+  U19967/Y (NOR2xp33_ASAP7_75t_L)       26.1052   796.9281 f
+  U19969/SN (HAxp5_ASAP7_75t_L)         43.4474   840.3755 f
+  U19974/Y (AND2x2_ASAP7_75t_L)         20.6679   861.0434 f
+  U19975/Y (NOR2xp33_ASAP7_75t_L)       11.1178   872.1612 r
+  U19979/Y (NOR2xp33_ASAP7_75t_L)       11.4323   883.5935 f
+  U19980/Y (NOR2xp33_ASAP7_75t_L)       13.0425   896.6360 r
+  U19988/Y (INVxp33_ASAP7_75t_L)        15.3411   911.9771 f
+  U19989/SN (HAxp5_ASAP7_75t_L)         20.4021   932.3792 f
+  U19990/Y (INVxp33_ASAP7_75t_L)        20.7480   953.1272 r
+  U19991/Y (AND2x2_ASAP7_75t_L)         18.9879   972.1151 r
+  U19992/Y (NOR2xp33_ASAP7_75t_L)       10.4696   982.5847 f
+  U20425/Y (INVxp33_ASAP7_75t_L)        16.9728   999.5575 r
+  U20426/SN (HAxp5_ASAP7_75t_L)         21.7393   1021.2968 r
+  U20507/Y (INVxp33_ASAP7_75t_L)        16.2194   1037.5162 f
+  U20509/SN (HAxp5_ASAP7_75t_L)         34.3182   1071.8345 f
+  U20510/Y (NOR2xp33_ASAP7_75t_L)       12.0275   1083.8619 r
+  U20511/Y (NOR2xp33_ASAP7_75t_L)       12.9282   1096.7902 f
+  U20999/Y (INVxp33_ASAP7_75t_L)        18.5508   1115.3409 r
+  U21000/SN (HAxp5_ASAP7_75t_L)         20.5856   1135.9265 r
+  U21002/Y (INVxp33_ASAP7_75t_L)        15.7151   1151.6416 f
+  U21003/SN (HAxp5_ASAP7_75t_L)         15.0509   1166.6925 r
+  U21745/Y (INVxp33_ASAP7_75t_L)        16.8755   1183.5680 f
+  U21746/SN (HAxp5_ASAP7_75t_L)         25.6976   1209.2656 f
+  U21925/Y (INVxp33_ASAP7_75t_L)        16.1449   1225.4105 r
+  U21926/SN (HAxp5_ASAP7_75t_L)         28.6173   1254.0278 r
+  U21927/Y (NOR2xp33_ASAP7_75t_L)       12.0338   1266.0616 f
+  U21928/Y (NOR2xp33_ASAP7_75t_L)       21.1512   1287.2129 r
+  U21932/Y (NOR2xp33_ASAP7_75t_L)       14.1488   1301.3617 f
+  U21933/Y (NOR2xp33_ASAP7_75t_L)       21.1512   1322.5129 r
+  U21937/Y (NOR2xp33_ASAP7_75t_L)       14.1488   1336.6617 f
+  U21938/Y (NOR2xp33_ASAP7_75t_L)       21.1512   1357.8130 r
+  U21942/Y (NOR2xp33_ASAP7_75t_L)       14.1488   1371.9618 f
+  U21943/Y (NOR2xp33_ASAP7_75t_L)       21.1512   1393.1130 r
+  U21947/Y (NOR2xp33_ASAP7_75t_L)       14.1488   1407.2618 f
+  U21948/Y (NOR2xp33_ASAP7_75t_L)       21.1512   1428.4131 r
+  U21952/Y (NOR2xp33_ASAP7_75t_L)       14.1488   1442.5619 f
+  U21953/Y (NOR2xp33_ASAP7_75t_L)       21.1512   1463.7131 r
+  U21957/Y (NOR2xp33_ASAP7_75t_L)       14.1488   1477.8619 f
+  U21958/Y (NOR2xp33_ASAP7_75t_L)       21.1512   1499.0132 r
+  U21962/Y (NOR2xp33_ASAP7_75t_L)       14.1860   1513.1992 f
+  U21963/Y (NOR2xp33_ASAP7_75t_L)       21.1665   1534.3657 r
+  U21967/Y (NOR2xp33_ASAP7_75t_L)       14.1501   1548.5159 f
+  U21968/Y (NOR2xp33_ASAP7_75t_L)       21.1517   1569.6676 r
+  U21972/Y (NOR2xp33_ASAP7_75t_L)       14.1488   1583.8164 f
+  U21973/Y (NOR2xp33_ASAP7_75t_L)       21.1512   1604.9677 r
+  U21977/Y (NOR2xp33_ASAP7_75t_L)       14.1488   1619.1165 f
+  U21978/Y (NOR2xp33_ASAP7_75t_L)       21.1512   1640.2677 r
+  U21982/Y (NOR2xp33_ASAP7_75t_L)       14.1488   1654.4165 f
+  U21983/Y (NOR2xp33_ASAP7_75t_L)       21.1512   1675.5677 r
+  U21985/Y (NOR2xp33_ASAP7_75t_L)       14.1488   1689.7166 f
+  U21986/Y (NOR2xp33_ASAP7_75t_L)       21.1512   1710.8678 r
+  U21990/Y (NOR2xp33_ASAP7_75t_L)       14.1997   1725.0675 f
+  U21991/Y (NOR2xp33_ASAP7_75t_L)       21.1720   1746.2395 r
+  U21995/Y (NOR2xp33_ASAP7_75t_L)       14.1860   1760.4255 f
+  U21996/Y (NOR2xp33_ASAP7_75t_L)       21.1665   1781.5920 r
+  U22000/Y (NOR2xp33_ASAP7_75t_L)       14.1501   1795.7422 f
+  U22001/Y (NOR2xp33_ASAP7_75t_L)       21.1517   1816.8939 r
+  U22005/Y (NOR2xp33_ASAP7_75t_L)       14.1860   1831.0800 f
+  U22006/Y (NOR2xp33_ASAP7_75t_L)       21.1665   1852.2465 r
+  U22010/Y (NOR2xp33_ASAP7_75t_L)       14.1501   1866.3966 f
+  U22011/Y (NOR2xp33_ASAP7_75t_L)       21.1517   1887.5483 r
+  U22015/Y (NOR2xp33_ASAP7_75t_L)       14.1488   1901.6971 f
+  U22016/Y (NOR2xp33_ASAP7_75t_L)       21.1512   1922.8484 r
+  U22020/Y (NOR2xp33_ASAP7_75t_L)       14.1860   1937.0344 f
+  U22021/Y (NOR2xp33_ASAP7_75t_L)       21.1665   1958.2009 r
+  U22025/Y (NOR2xp33_ASAP7_75t_L)       14.1501   1972.3511 f
+  U22026/Y (NOR2xp33_ASAP7_75t_L)       21.1517   1993.5028 r
+  U22033/SN (HAxp5_ASAP7_75t_L)         21.0814   2014.5842 r
+  U22035/Y (NOR2xp33_ASAP7_75t_L)       13.7361   2028.3203 f
+  U22036/Y (NOR2xp33_ASAP7_75t_L)       20.9829   2049.3032 r
+  U22040/Y (NOR2xp33_ASAP7_75t_L)       14.1997   2063.5029 f
+  U22041/Y (NOR2xp33_ASAP7_75t_L)       21.1721   2084.6750 r
+  U22045/Y (NOR2xp33_ASAP7_75t_L)       14.1506   2098.8257 f
+  U22046/Y (NOR2xp33_ASAP7_75t_L)       21.1521   2119.9778 r
+  U22050/Y (NOR2xp33_ASAP7_75t_L)       14.1489   2134.1267 f
+  U22051/Y (NOR2xp33_ASAP7_75t_L)       21.1514   2155.2781 r
+  U22058/SN (HAxp5_ASAP7_75t_L)         21.0815   2176.3596 r
+  U22060/Y (NOR2xp33_ASAP7_75t_L)       13.7361   2190.0957 f
+  U22061/Y (NOR2xp33_ASAP7_75t_L)       20.9829   2211.0786 r
+  U22065/Y (NOR2xp33_ASAP7_75t_L)       14.1997   2225.2783 f
+  U22066/Y (NOR2xp33_ASAP7_75t_L)       21.1721   2246.4504 r
+  U22070/Y (NOR2xp33_ASAP7_75t_L)       14.1860   2260.6365 f
+  U22071/Y (NOR2xp33_ASAP7_75t_L)       32.0481   2292.6846 r
+  U22635/SN (FAx1_ASAP7_75t_L)          32.3511   2325.0356 r
+  U23180/Y (INVxp33_ASAP7_75t_L)        19.4045   2344.4402 f
+  U23182/SN (HAxp5_ASAP7_75t_L)         26.9897   2371.4299 f
+  U23183/Y (NOR2xp33_ASAP7_75t_L)       10.8564   2382.2864 r
+  U23184/Y (NOR2xp33_ASAP7_75t_L)       19.2598   2401.5461 f
+  U23188/Y (NOR2xp33_ASAP7_75t_L)       11.8601   2413.4062 r
+  U23189/Y (NOR2xp33_ASAP7_75t_L)       19.2869   2432.6931 f
+  U23193/Y (NOR2xp33_ASAP7_75t_L)       11.8525   2444.5457 r
+  U23194/Y (NOR2xp33_ASAP7_75t_L)       18.5859   2463.1316 f
+  U23202/SN (HAxp5_ASAP7_75t_L)         26.9072   2490.0388 f
+  U23285/Y (INVxp33_ASAP7_75t_L)        16.5117   2506.5505 r
+  U23286/SN (HAxp5_ASAP7_75t_L)         21.8799   2528.4304 r
+  U23288/Y (INVxp33_ASAP7_75t_L)        16.2976   2544.7280 f
+  U23289/SN (HAxp5_ASAP7_75t_L)         29.5325   2574.2605 f
+  U23794/Y (NAND2xp33_ASAP7_75t_L)      21.9263   2596.1868 r
+  U23795/Y (NAND2xp33_ASAP7_75t_L)      15.9348   2612.1216 f
+  U23796/Y (NAND2xp33_ASAP7_75t_L)      20.2583   2632.3799 r
+  U23797/Y (NAND2xp33_ASAP7_75t_L)      16.0085   2648.3884 f
+  U23798/Y (NAND2xp33_ASAP7_75t_L)      20.2900   2668.6785 r
+  U23799/Y (NAND2xp33_ASAP7_75t_L)      16.0098   2684.6882 f
+  U23800/Y (NAND2xp33_ASAP7_75t_L)      20.2908   2704.9790 r
+  U23801/Y (NAND2xp33_ASAP7_75t_L)      16.0098   2720.9888 f
+  U23802/Y (NAND2xp33_ASAP7_75t_L)      20.2908   2741.2795 r
+  U23803/Y (NAND2xp33_ASAP7_75t_L)      16.0098   2757.2893 f
+  U23804/Y (NAND2xp33_ASAP7_75t_L)      20.2908   2777.5801 r
+  U23805/Y (NAND2xp33_ASAP7_75t_L)      20.3076   2797.8877 f
+  U23811/Y (MAJIxp5_ASAP7_75t_L)        19.7932   2817.6809 r
+  U24049/Y (NOR2xp33_ASAP7_75t_L)       17.8179   2835.4988 f
+  U24052/Y (NOR2xp33_ASAP7_75t_L)       16.6467   2852.1455 r
+  U24304/Y (NOR2xp33_ASAP7_75t_L)       17.0962   2869.2417 f
+  U24307/Y (NOR2xp33_ASAP7_75t_L)       16.4771   2885.7188 r
+  U24548/Y (NOR2xp33_ASAP7_75t_L)       17.0452   2902.7639 f
+  U24551/Y (NOR2xp33_ASAP7_75t_L)       16.4651   2919.2290 r
+  U24804/Y (NOR2xp33_ASAP7_75t_L)       17.0415   2936.2705 f
+  U24807/Y (NOR2xp33_ASAP7_75t_L)       16.4641   2952.7346 r
+  U25051/Y (NOR2xp33_ASAP7_75t_L)       17.0413   2969.7759 f
+  U25054/Y (NOR2xp33_ASAP7_75t_L)       16.4641   2986.2400 r
+  U25286/Y (NOR2xp33_ASAP7_75t_L)       17.0413   3003.2812 f
+  U25289/Y (NOR2xp33_ASAP7_75t_L)       16.4641   3019.7454 r
+  U25523/Y (NOR2xp33_ASAP7_75t_L)       17.0413   3036.7866 f
+  U25526/Y (NOR2xp33_ASAP7_75t_L)       16.4641   3053.2507 r
+  U25750/Y (NOR2xp33_ASAP7_75t_L)       17.0413   3070.2920 f
+  U25753/Y (NOR2xp33_ASAP7_75t_L)       16.4641   3086.7561 r
+  U25978/Y (NOR2xp33_ASAP7_75t_L)       17.0413   3103.7974 f
+  U25981/Y (NOR2xp33_ASAP7_75t_L)       16.4641   3120.2615 r
+  U26202/Y (NOR2xp33_ASAP7_75t_L)       17.0413   3137.3027 f
+  U26205/Y (NOR2xp33_ASAP7_75t_L)       16.4641   3153.7668 r
+  U26410/Y (NOR2xp33_ASAP7_75t_L)       17.0413   3170.8081 f
+  U27014/Y (NOR2xp33_ASAP7_75t_L)       33.3521   3204.1602 r
+  U27022/Y (MAJIxp5_ASAP7_75t_L)        18.2600   3222.4202 f
+  U27023/Y (NAND2xp33_ASAP7_75t_L)      21.8289   3244.2490 r
+  U27024/Y (NAND2xp33_ASAP7_75t_L)      19.9873   3264.2363 f
+  U27029/Y (MAJIxp5_ASAP7_75t_L)        19.7104   3283.9468 r
+  U27228/Y (NOR2xp33_ASAP7_75t_L)       17.7070   3301.6538 f
+  U28362/Y (NOR2xp33_ASAP7_75t_L)       40.1096   3341.7634 r
+  U28367/Y (MAJIxp5_ASAP7_75t_L)        21.3655   3363.1289 f
+  U28370/Y (NAND2xp33_ASAP7_75t_L)      22.8577   3385.9866 r
+  U28371/Y (NAND2xp33_ASAP7_75t_L)      16.0483   3402.0349 f
+  U28372/Y (NAND2xp33_ASAP7_75t_L)      20.3074   3422.3423 r
+  U28373/Y (NAND2xp33_ASAP7_75t_L)      15.6936   3438.0359 f
+  U28374/Y (NAND2xp33_ASAP7_75t_L)      20.1536   3458.1895 r
+  U28375/Y (NAND2xp33_ASAP7_75t_L)      15.6938   3473.8833 f
+  U28376/Y (NAND2xp33_ASAP7_75t_L)      20.1538   3494.0371 r
+  U28377/Y (NAND2xp33_ASAP7_75t_L)      18.5415   3512.5786 f
+  U28378/Y (MAJIxp5_ASAP7_75t_L)        16.8689   3529.4475 r
+  U28551/Y (NOR2xp33_ASAP7_75t_L)       18.1897   3547.6372 f
+  U29575/Y (NOR2xp33_ASAP7_75t_L)       33.7607   3581.3979 r
+  U29580/Y (MAJIxp5_ASAP7_75t_L)        17.9407   3599.3386 f
+  U29583/Y (NAND2xp33_ASAP7_75t_L)      22.8098   3622.1484 r
+  U29584/Y (NAND2xp33_ASAP7_75t_L)      16.0425   3638.1909 f
+  U29585/Y (NAND2xp33_ASAP7_75t_L)      20.3047   3658.4956 r
+  U29586/Y (NAND2xp33_ASAP7_75t_L)      15.6936   3674.1892 f
+  U29587/Y (NAND2xp33_ASAP7_75t_L)      20.1536   3694.3428 r
+  U29588/Y (NAND2xp33_ASAP7_75t_L)      15.6980   3710.0408 f
+  U29589/Y (NAND2xp33_ASAP7_75t_L)      20.1555   3730.1963 r
+  U29590/Y (NAND2xp33_ASAP7_75t_L)      19.9204   3750.1167 f
+  U29596/Y (MAJIxp5_ASAP7_75t_L)        19.6931   3769.8098 r
+  U29760/Y (NOR2xp33_ASAP7_75t_L)       17.8176   3787.6274 f
+  U29763/Y (NOR2xp33_ASAP7_75t_L)       16.6465   3804.2739 r
+  U29934/Y (NOR2xp33_ASAP7_75t_L)       17.0962   3821.3701 f
+  U29937/Y (NOR2xp33_ASAP7_75t_L)       16.4771   3837.8472 r
+  U30097/Y (NOR2xp33_ASAP7_75t_L)       17.0452   3854.8923 f
+  U30100/Y (NOR2xp33_ASAP7_75t_L)       16.4651   3871.3574 r
+  U30251/Y (NOR2xp33_ASAP7_75t_L)       17.0415   3888.3989 f
+  U30254/Y (NOR2xp33_ASAP7_75t_L)       16.4641   3904.8630 r
+  U30398/Y (NOR2xp33_ASAP7_75t_L)       17.0413   3921.9043 f
+  U30401/Y (NOR2xp33_ASAP7_75t_L)       16.4641   3938.3684 r
+  U30548/Y (NOR2xp33_ASAP7_75t_L)       17.0413   3955.4097 f
+  U30551/Y (NOR2xp33_ASAP7_75t_L)       16.4641   3971.8738 r
+  U30687/Y (NOR2xp33_ASAP7_75t_L)       17.0413   3988.9150 f
+  U30690/Y (NOR2xp33_ASAP7_75t_L)       16.4641   4005.3792 r
+  U30823/Y (NOR2xp33_ASAP7_75t_L)       17.0413   4022.4204 f
+  U30826/Y (NOR2xp33_ASAP7_75t_L)       16.4641   4038.8845 r
+  U30954/Y (NOR2xp33_ASAP7_75t_L)       17.0413   4055.9258 f
+  U30957/Y (NOR2xp33_ASAP7_75t_L)       16.4641   4072.3899 r
+  U31075/Y (NOR2xp33_ASAP7_75t_L)       17.0413   4089.4312 f
+  U31078/Y (NOR2xp33_ASAP7_75t_L)       16.4639   4105.8950 r
+  U31199/Y (NOR2xp33_ASAP7_75t_L)       17.0415   4122.9365 f
+  U31202/Y (NOR2xp33_ASAP7_75t_L)       16.4639   4139.4004 r
+  U31323/Y (NOR2xp33_ASAP7_75t_L)       17.0415   4156.4419 f
+  U31326/Y (NOR2xp33_ASAP7_75t_L)       16.4639   4172.9058 r
+  U31435/Y (NOR2xp33_ASAP7_75t_L)       17.0415   4189.9473 f
+  U31438/Y (NOR2xp33_ASAP7_75t_L)       16.4639   4206.4111 r
+  U31546/Y (NOR2xp33_ASAP7_75t_L)       17.0415   4223.4526 f
+  U31549/Y (NOR2xp33_ASAP7_75t_L)       16.4639   4239.9165 r
+  U31654/Y (NOR2xp33_ASAP7_75t_L)       17.0415   4256.9580 f
+  U31657/Y (NOR2xp33_ASAP7_75t_L)       16.4639   4273.4219 r
+  U31755/Y (NOR2xp33_ASAP7_75t_L)       17.0415   4290.4634 f
+  U31758/Y (NOR2xp33_ASAP7_75t_L)       16.4639   4306.9272 r
+  U31856/Y (NOR2xp33_ASAP7_75t_L)       17.0415   4323.9688 f
+  U31859/Y (NOR2xp33_ASAP7_75t_L)       16.4639   4340.4326 r
+  U31955/Y (NOR2xp33_ASAP7_75t_L)       17.0415   4357.4741 f
+  U31958/Y (NOR2xp33_ASAP7_75t_L)       16.4639   4373.9380 r
+  U32046/Y (NOR2xp33_ASAP7_75t_L)       17.0415   4390.9795 f
+  U32049/Y (NOR2xp33_ASAP7_75t_L)       16.4639   4407.4434 r
+  U32134/Y (NOR2xp33_ASAP7_75t_L)       17.0415   4424.4849 f
+  U32137/Y (NOR2xp33_ASAP7_75t_L)       16.4639   4440.9487 r
+  U32216/Y (NOR2xp33_ASAP7_75t_L)       17.0415   4457.9902 f
+  U32219/Y (NOR2xp33_ASAP7_75t_L)       16.4639   4474.4541 r
+  U32293/Y (NOR2xp33_ASAP7_75t_L)       17.0415   4491.4956 f
+  U32296/Y (NOR2xp33_ASAP7_75t_L)       16.4639   4507.9595 r
+  U32366/Y (NOR2xp33_ASAP7_75t_L)       17.0415   4525.0010 f
+  U32369/Y (NOR2xp33_ASAP7_75t_L)       16.4639   4541.4648 r
+  U32439/Y (NOR2xp33_ASAP7_75t_L)       17.0415   4558.5063 f
+  U32442/Y (NOR2xp33_ASAP7_75t_L)       16.4639   4574.9702 r
+  U32505/Y (NOR2xp33_ASAP7_75t_L)       17.0415   4592.0117 f
+  U32508/Y (NOR2xp33_ASAP7_75t_L)       16.4639   4608.4756 r
+  U32564/Y (NOR2xp33_ASAP7_75t_L)       17.0415   4625.5171 f
+  U32567/Y (NOR2xp33_ASAP7_75t_L)       16.4639   4641.9810 r
+  U32629/Y (NOR2xp33_ASAP7_75t_L)       17.0415   4659.0225 f
+  U32632/Y (NOR2xp33_ASAP7_75t_L)       16.4639   4675.4863 r
+  U32680/Y (NOR2xp33_ASAP7_75t_L)       17.0415   4692.5278 f
+  U32683/Y (NOR2xp33_ASAP7_75t_L)       16.4639   4708.9917 r
+  U32729/Y (NOR2xp33_ASAP7_75t_L)       17.0415   4726.0332 f
+  U32732/Y (NOR2xp33_ASAP7_75t_L)       16.4639   4742.4971 r
+  U32778/Y (NOR2xp33_ASAP7_75t_L)       17.0415   4759.5386 f
+  U32781/Y (NOR2xp33_ASAP7_75t_L)       16.4639   4776.0024 r
+  U32816/Y (NOR2xp33_ASAP7_75t_L)       17.0415   4793.0439 f
+  U32819/Y (NOR2xp33_ASAP7_75t_L)       16.4639   4809.5078 r
+  U32853/Y (NOR2xp33_ASAP7_75t_L)       17.0415   4826.5493 f
+  U32856/Y (NOR2xp33_ASAP7_75t_L)       16.4639   4843.0132 r
+  U32890/Y (NOR2xp33_ASAP7_75t_L)       17.0415   4860.0547 f
+  U32893/Y (NOR2xp33_ASAP7_75t_L)       16.4639   4876.5186 r
+  U32917/Y (NOR2xp33_ASAP7_75t_L)       17.0415   4893.5601 f
+  U32998/Y (NOR2xp33_ASAP7_75t_L)       33.3521   4926.9121 r
+  U33043/Y (MAJIxp5_ASAP7_75t_L)        18.2598   4945.1719 f
+  U33044/Y (NAND2xp33_ASAP7_75t_L)      21.8267   4966.9985 r
+  U33059/Y (NAND2xp33_ASAP7_75t_L)      15.7729   4982.7715 f
+  U33060/Y (NAND2xp33_ASAP7_75t_L)      20.1880   5002.9595 r
+  U33074/Y (NAND2xp33_ASAP7_75t_L)      15.7261   5018.6855 f
+  U33075/Y (NAND2xp33_ASAP7_75t_L)      20.1680   5038.8535 r
+  U33086/Y (NAND2xp33_ASAP7_75t_L)      15.7505   5054.6040 f
+  U33087/Y (NAND2xp33_ASAP7_75t_L)      25.8516   5080.4556 r
+  U33091/Y (NAND2xp33_ASAP7_75t_L)      13.1436   5093.5991 f
+  U33092/Y (A2O1A1Ixp33_ASAP7_75t_L)    14.8291   5108.4282 r
+  U33093/Y (NAND3xp33_ASAP7_75t_L)      12.7573   5121.1855 f
+  U33094/Y (A2O1A1Ixp33_ASAP7_75t_L)    22.7104   5143.8960 r
+  f_127_ (out)                           0.0000   5143.8960 r
+  data arrival time                               5143.8960
+
+  max_delay                            10000.0000 10000.0000
+  output external delay                  0.0000   10000.0000
+  data required time                              10000.0000
+  -----------------------------------------------------------
+  data required time                              10000.0000
+  data arrival time                               -5143.8960
+  -----------------------------------------------------------
+  slack (MET)                                     4856.1040
+
+
+1
+ 
+****************************************
+Report : area
+Design : top
+Version: O-2018.06-SP1
+Date   : Wed Jul 30 23:44:09 2025
+****************************************
+
+Library(s) Used:
+
+    asap7sc7p5t_AO_LVT_TT_nldm_211120 (File: /mnt/lib/asap7sc7p5t_AO_LVT_TT_nldm_211120.db)
+    asap7sc7p5t_SIMPLE_LVT_TT_nldm_211120 (File: /mnt/lib/asap7sc7p5t_SIMPLE_LVT_TT_nldm_211120.db)
+    asap7sc7p5t_INVBUF_LVT_TT_nldm_211120 (File: /mnt/lib/asap7sc7p5t_INVBUF_LVT_TT_nldm_220122.db)
+    asap7sc7p5t_OA_LVT_TT_nldm_211120 (File: /mnt/lib/asap7sc7p5t_OA_LVT_TT_nldm_211120.db)
+    asap7sc7p5t_OA_SLVT_TT_nldm_211120 (File: /mnt/lib/asap7sc7p5t_OA_SLVT_TT_nldm_211120.db)
+
+Number of ports:                          256
+Number of nets:                         16883
+Number of cells:                        16755
+Number of combinational cells:          16755
+Number of sequential cells:                 0
+Number of macros/black boxes:               0
+Number of buf/inv:                       3340
+Number of references:                      43
+
+Combinational area:               1321.050056
+Buf/Inv area:                      147.068462
+Noncombinational area:               0.000000
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:                  1321.050056
+Total area:                 undefined
+1
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: There is no defined clock in the design. (PWR-80)
+Warning: Design has unannotated primary inputs. (PWR-414)
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : top
+Version: O-2018.06-SP1
+Date   : Wed Jul 30 23:44:10 2025
+****************************************
+
+
+Library(s) Used:
+
+    asap7sc7p5t_AO_LVT_TT_nldm_211120 (File: /mnt/lib/asap7sc7p5t_AO_LVT_TT_nldm_211120.db)
+    asap7sc7p5t_SIMPLE_LVT_TT_nldm_211120 (File: /mnt/lib/asap7sc7p5t_SIMPLE_LVT_TT_nldm_211120.db)
+    asap7sc7p5t_INVBUF_LVT_TT_nldm_211120 (File: /mnt/lib/asap7sc7p5t_INVBUF_LVT_TT_nldm_220122.db)
+    asap7sc7p5t_OA_LVT_TT_nldm_211120 (File: /mnt/lib/asap7sc7p5t_OA_LVT_TT_nldm_211120.db)
+    asap7sc7p5t_OA_SLVT_TT_nldm_211120 (File: /mnt/lib/asap7sc7p5t_OA_SLVT_TT_nldm_211120.db)
+
+
+Operating Conditions: PVT_0P7V_25C   Library: asap7sc7p5t_AO_LVT_TT_nldm_211120
+Wire Load Model Mode: enclosed
+
+Design        Wire Load Model            Library
+------------------------------------------------
+
+
+Global Operating Voltage = 0.7  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ps
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+  Cell Internal Power  =   1.3948  W   (44%)
+  Net Switching Power  =   1.7715  W   (56%)
+                         ---------
+Total Dynamic Power    =   3.1663  W  (100%)
+
+Cell Leakage Power     =   9.4496 uW
+
+Information: report_power power group summary does not include estimated clock tree power. (PWR-789)
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)
+register           0.0000            0.0000            0.0000            0.0000  (   0.00%)
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
+combinational  1.3948e+03        1.7715e+03        9.4496e+06        3.1663e+03  ( 100.00%)
+--------------------------------------------------------------------------------------------------
+Total          1.3948e+03 mW     1.7715e+03 mW     9.4496e+06 pW     3.1663e+03 mW
+1
