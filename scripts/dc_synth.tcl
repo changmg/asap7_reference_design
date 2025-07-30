@@ -4,7 +4,8 @@
 set DESIGN_NAME "multiplier"
 set TOP_MODULE "top"
 # change your timing constraint here
-set CLOCK_CYCLE 1000 
+# set CLOCK_CYCLE 1000 
+set CLOCK_CYCLE 10000
 
 # Setup directories
 set RTL_DIR "./design/$DESIGN_NAME/rtl"
