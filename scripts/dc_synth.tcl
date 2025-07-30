@@ -1,6 +1,8 @@
 # Setup design parameters
-set DESIGN_NAME "adder"
-set TOP_MODULE "adder"
+# set DESIGN_NAME "adder"
+# set TOP_MODULE "adder"
+set DESIGN_NAME "multiplier"
+set TOP_MODULE "top"
 # change your timing constraint here
 set CLOCK_CYCLE 1000 
 
@@ -28,4 +30,4 @@ source -echo -verbose ./scripts/dc_scripts/2_setting_comb.tcl
 source -echo -verbose ./scripts/dc_scripts/3_compile.tcl 
 source -echo -verbose ./scripts/dc_scripts/4_report.tcl 
 
-# exit
+exit

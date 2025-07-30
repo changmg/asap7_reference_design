@@ -3,3 +3,8 @@ docs
 *.log
 *.svf
 alib-52
+timingReports
+innovus.cmd*
+innovus.log*
+*.rpt*
+*.bin
