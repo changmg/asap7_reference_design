@@ -11,3 +11,11 @@ innovus.log*
 filenames.log
 command.log
 *_man.log
+pt_shell_command.log
+parasitics_command.log
+simv.daidir/*
+csrc/*
+simv
+ucli.key
+*.vcd
+*.saif

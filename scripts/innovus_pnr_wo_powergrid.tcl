@@ -15,11 +15,11 @@ set VERSION 18
 # set DESIGN_NAME "adder"
 # set TOP_MODULE "adder"
 set DESIGN_NAME "multiplier"
-set TOP_MODULE "top"
+set TOP_MODULE "multiplier"
 # init paths
 set NET_DIR "./design/$DESIGN_NAME/netlist/"
 set RPT_DIR "./design/$DESIGN_NAME/report/"
-set OUTPUT_DEF_DIR "./design/$DESIGN_NAME/def/"
+set OUTPUT_DIR "./design/$DESIGN_NAME/post_pnr/"
 set LEF_PATH "./lef/scaled/"
 set TLEF_PATH "./techlef/"
 # timing constraints/libraries are setup via the MMMC file
@@ -32,7 +32,7 @@ set NETLIST_FILE "${NET_DIR}/${DESIGN_NAME}_netlist.v"
 set init_design_uniquify 1
 puts "Reading netlist: ${NETLIST_FILE}"
 set init_verilog "${NETLIST_FILE}"
-set init_top_cell "${TOP_MODULE}"
+set top_name "${TOP_MODULE}"
 set init_design_netlisttype {Verilog}
 set init_design_settop {1}
  
@@ -207,8 +207,9 @@ verifyConnectivity -type all
 #========================
 set defOutLefVia 1
 set defOutLefNDR 1
-defOut -netlist -routing -allLayers ${OUTPUT_DEF_DIR}/${init_top_cell}_v${VERSION}.def
-saveNetlist ${OUTPUT_DEF_DIR}/${init_top_cell}_v${VERSION}.v													
+defOut -netlist -routing -allLayers ${OUTPUT_DIR}/${top_name}.def
+rcOut -rc_corner rc_typ_25 -spef ${OUTPUT_DIR}/${top_name}.spef
+saveNetlist ${OUTPUT_DIR}/${top_name}_postpnr.v
 
 #========================
 # Reports
