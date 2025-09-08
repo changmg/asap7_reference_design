@@ -55,4 +55,4 @@ comm = [
     "-output", "simulation.saif"
 ]
 print(comm)
-# os.system(comm)
+subprocess.run(comm, check=True)
