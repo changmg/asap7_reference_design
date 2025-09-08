@@ -1,4 +1,4 @@
-import os
+import subprocess
 from optparse import OptionParser
 
 
@@ -21,14 +21,38 @@ def GetOpt():
 args = GetOpt()
 
 # Run the simulation
-comm = f"vcs -sverilog -full64 -LDFLAGS -Wl,--no-as-needed -cc gcc-4.8 -cpp g++-4.8 -debug_all +v2k -timescale=1ns/1ps ./lib/asap7sc7p5t_AO_LVT_TT_201020.v ./lib/asap7sc7p5t_INVBUF_LVT_TT_201020.v ./lib/asap7sc7p5t_OA_LVT_TT_201020.v ./lib/asap7sc7p5t_SEQ_LVT_TT_201020.v ./lib/asap7sc7p5t_SIMPLE_LVT_TT_201020.v ./lib/asap7sc7p5t_AO_SLVT_TT_201020.v ./lib/asap7sc7p5t_INVBUF_SLVT_TT_201020.v ./lib/asap7sc7p5t_OA_SLVT_TT_201020.v ./lib/asap7sc7p5t_SEQ_SLVT_TT_201020.v ./lib/asap7sc7p5t_SIMPLE_SLVT_TT_201020.v {args.net} {args.tb}"
+comm = [
+    "/edadk/scripts/eda.pl", "snps", 
+    "vcs",
+    "-sverilog", "-full64", "-LDFLAGS", "-Wl,--no-as-needed", "-debug_all", "+v2k",
+    "-timescale=1ns/1ps",
+    "./lib/asap7sc7p5t_AO_LVT_TT_201020.v",
+    "./lib/asap7sc7p5t_INVBUF_LVT_TT_201020.v",
+    "./lib/asap7sc7p5t_OA_LVT_TT_201020.v",
+    "./lib/asap7sc7p5t_SEQ_LVT_TT_201020.v",
+    "./lib/asap7sc7p5t_SIMPLE_LVT_TT_201020.v",
+    "./lib/asap7sc7p5t_AO_SLVT_TT_201020.v",
+    "./lib/asap7sc7p5t_INVBUF_SLVT_TT_201020.v",
+    "./lib/asap7sc7p5t_OA_SLVT_TT_201020.v",
+    "./lib/asap7sc7p5t_SEQ_SLVT_TT_201020.v",
+    "./lib/asap7sc7p5t_SIMPLE_SLVT_TT_201020.v",
+    f"{args.net}",
+    f"{args.tb}"
+]
 print(comm)
-os.system(comm)
-# comm = f"./simv > ./tmp/vcs_sim.log"
-# print(comm)
-# os.system(comm)
+# subprocess.run(comm, check=True)
 
-# # Convert VCD to SAIF
+comm = ["./simv"]
+print(comm)
+# subprocess.run(comm, check=True)
+
+# Convert VCD to SAIF
 # comm = f"vcd2saif -input temp.vcd -output ./saif/8x8_w8a8_reconf.saif"
-# print(comm)
+comm = [
+    "/edadk/scripts/eda.pl", "snps", 
+    "vcd2saif", 
+    "-input", "simulation.vcd", 
+    "-output", "simulation.saif"
+]
+print(comm)
 # os.system(comm)

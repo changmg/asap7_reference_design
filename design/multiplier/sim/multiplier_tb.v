@@ -25,7 +25,7 @@ multiplier multiplier(
 initial begin
     clk = 0;
     void'($urandom(32'hdeadbeef));// Set a fixed seed for reproducibility
-    $dumpfile("multiplier.vcd");
+    $dumpfile("simulation.vcd");
     $dumpvars();
 end
 
